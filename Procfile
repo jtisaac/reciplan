@@ -1,1 +1,1 @@
-web: gunicorn --pythonpath django reciplan reciplan.wsgi --log-file -
+web: gunicorn --pythonpath django/reciplan reciplan.wsgi --log-file -
