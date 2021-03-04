@@ -5,9 +5,6 @@ import axios from 'axios';
 import UserProfile, { SERVICE_URL } from '../utils.js';
 import NotLoggedIn from './notloggedin.js';
 
-axios.defaults.xsrfCookieName = 'csrftoken'
-axios.defaults.xsrfHeaderName = 'X-CSRFToken'
-
 /**
  * Edit user profile
  * @extends Component

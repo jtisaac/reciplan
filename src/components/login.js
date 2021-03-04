@@ -5,9 +5,6 @@ import { Container, Row, Col, Button, Form, FormGroup, Label, Input } from 'reac
 import axios from 'axios';
 import UserProfile, { SERVICE_URL } from '../utils.js';
 
-axios.defaults.xsrfCookieName = 'csrftoken'
-axios.defaults.xsrfHeaderName = 'X-CSRFToken'
-
 /**
  * This is the page that pops up when a user needs to log in.
  * It calls the 'redirect' prop to return the user to the application.

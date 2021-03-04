@@ -6,9 +6,6 @@ import UserProfile, { SERVICE_URL } from '../utils.js';
 import NotLoggedIn from './notloggedin.js';
 import NewRecipe from './newrecipe.js';
 
-axios.defaults.xsrfCookieName = 'csrftoken'
-axios.defaults.xsrfHeaderName = 'X-CSRFToken'
-
 /**
  * Displays my recipes.
  * @extends Component

@@ -4,9 +4,6 @@ import '../css/recipe.css';
 import axios from 'axios';
 import { SERVICE_URL } from '../utils.js';
 
-axios.defaults.xsrfCookieName = 'csrftoken'
-axios.defaults.xsrfHeaderName = 'X-CSRFToken'
-
 /**
  * Displays the search results for recipe search.
  * @extends Component

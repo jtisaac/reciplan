@@ -6,9 +6,6 @@ import UserProfile, { SERVICE_URL } from '../utils.js';
 import NotLoggedIn from './notloggedin.js';
 import NewRecipe from './newrecipe.js';
 
-axios.defaults.xsrfCookieName = 'csrftoken'
-axios.defaults.xsrfHeaderName = 'X-CSRFToken'
-
 /**
  * Displays the recipes that our user has in the cart currently.
  * Has an option to build a grocery list based off of these recipes.

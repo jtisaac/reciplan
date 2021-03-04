@@ -4,9 +4,6 @@ import { Container, Row, Col, Button, Form, FormGroup, Label, Input } from 'reac
 import axios from 'axios';
 import UserProfile, { SERVICE_URL } from '../utils.js';
 
-axios.defaults.xsrfCookieName = 'csrftoken'
-axios.defaults.xsrfHeaderName = 'X-CSRFToken'
-
 /**
  *
  * @extends Component
