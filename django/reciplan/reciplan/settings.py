@@ -26,7 +26,7 @@ SECRET_KEY = '8oi1yp+=d15bd66xs2^@yp@hd7tcp!nkgln*1j60$jicg6p5s7'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -56,10 +56,12 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'reciplan.urls'
 
+BASE_DIR = Path(__file__).resolve().root.root
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['api/templates'],
+        'DIRS': [os.path.join(BASE_DIR, 'build')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

@@ -5,6 +5,9 @@ import axios from 'axios';
 import UserProfile, { SERVICE_URL } from '../utils.js';
 import NotLoggedIn from './notloggedin.js';
 
+axios.defaults.xsrfCookieName = 'csrftoken'
+axios.defaults.xsrfHeaderName = 'X-CSRFToken'
+
 /**
  * Create a new recipe
  * Contains a form to create a new recipe and POSTs it to our service.

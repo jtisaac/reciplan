@@ -4,6 +4,9 @@ import '../css/home.css';
 import axios from 'axios';
 import { SERVICE_URL } from '../utils.js';
 
+axios.defaults.xsrfCookieName = 'csrftoken'
+axios.defaults.xsrfHeaderName = 'X-CSRFToken'
+
 /**
  * Home page - preview a recipe or something
  * @extends Component
