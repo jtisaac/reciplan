@@ -58,7 +58,7 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'reciplan.urls'
 
-BASE_DIR = Path(__file__).resolve().root.root
+BASE_DIR = Path(__file__).resolve().parent.parent
 
 TEMPLATES = [
     {
